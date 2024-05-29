@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="header relative bg-[#F3EAD7]">
-      <div className="main-header container mx-auto p-3 lg:px-0 xl:px-16 flex items-center justify-between">
+      <div className="main-header container mx-auto p-3 lg:px-0 xl:px-32 flex items-center justify-between">
         <div className="main-logo">
           <Link to="/">
             <img src={Logo} alt="Quran-House" />
@@ -68,7 +68,7 @@ export default function Header() {
               <li key={index}>
                 <Link
                   to={item.to}
-                  className="text-lg xl:text-xl pr-3"
+                  className="text-lg pr-3"
                   style={{
                     color: "#653B0C",
                     borderRight: index < 7 ? "2px solid #653B0C" : "none",

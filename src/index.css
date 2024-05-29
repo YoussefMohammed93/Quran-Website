@@ -16,7 +16,7 @@ body {
 
 @media (min-width: 1537px) {
   .home-content {
-    padding-top: 12.5rem;
+    padding-top: 3rem;
   }
 }
 
@@ -34,38 +34,19 @@ body {
     font-size: 70px;
   }
   .home-text-p {
-    font-size: 24px;
+    font-size: 22px;
     text-shadow: 2px 2px 2px #6b6b6b;
   }
-  .pt-28 {
-    padding-top: 5rem !important;
-  }
 }
 
-@media (max-width: 767px) {
-  .home {
-    min-height: 95vh;
-  }
-  .home-content {
-    padding-top: 0;
-  }
-  .home-text-h1 {
-    font-size: 40px;
-  }
-  .home-text-h1-span {
-    font-size: 60px;
-  }
-  .home-text-p {
-    font-size: 20px;
-    padding-top: 1rem;
-  }
-  .pt-28 {
-    padding-top: 2rem !important;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .home-text-p {
     text-shadow: none !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .home-video iframe {
+    height: 400px;
   }
 }
