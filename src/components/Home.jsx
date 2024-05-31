@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import OrangeCard from "./Orange-Card";
 import BlueCircle from "./BlueCircle";
+import ImgCard from "./ImgCard";
 import HomeImg from "/src/assets/SectionHome.svg";
 import HomeBG from "/src/assets/home-bg.png";
 import HomeTeachers from "/src/assets/home-teachers.png";
@@ -18,6 +19,12 @@ import FeedbackImg from "/src/assets/feedback.png";
 import HomeWorkImg from "/src/assets/homework.png";
 import ArrowImg from "/src/assets/Right-Arrow.svg";
 import CompanyImg from "/src/assets/Company-Profile.svg";
+import ImgCardOne from "/src/assets/img-card-1.svg";
+import ImgCardTwo from "/src/assets/img-card-2.svg";
+import ImgCardThree from "/src/assets/img-card-3.svg";
+import ImgCardFour from "/src/assets/img-card-4.svg";
+import ImgCardFive from "/src/assets/img-card-5.svg";
+import ImgCardSix from "/src/assets/img-card-6.svg";
 
 export default function Home() {
   return (
@@ -206,7 +213,7 @@ export default function Home() {
       <section className="bg-[#FFE3CB]">
         <div className="container mx-auto p-3 lg:px-0 xl:px-32 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="pr-8 md:border-r md:border-r-black md:mb-5">
+            <div className="md:pr-8 px-4 md:border-r md:border-r-black md:mb-5">
               <h2 className="text-4xl font-bold text-[#DC811C]">
                 Are you an adult who wants to learn Quran, Arabic, and Islam?
               </h2>
@@ -422,7 +429,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="border-b-2">
         <div className="container mx-auto p-4 lg:px-16 xl:px-32 my-6">
           <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-8 sm:gap-12 md:gap-16">
             <div className="col-span-12 md:col-span-5 order-1 md:order-2">
@@ -444,6 +451,51 @@ export default function Home() {
                   Download PDF
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="border-b-2">
+        <div className="container mx-auto p-4 lg:px-16 xl:px-32 my-6">
+          <h3 className="text-2xl text-center sm:text-3xl md:text-5xl text-[#766CAD] font-bold mb-10">
+            Download & Read Quran House Company Profile
+          </h3>
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <ImgCard
+                ImgCardImage={ImgCardOne}
+                ImgCardTitle="Set Your Suitable Schedule and We Will Do the Rest"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <ImgCard
+                ImgCardImage={ImgCardTwo}
+                ImgCardTitle="Meet a Pool of Top-Tieers Professional Tutors"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <ImgCard
+                ImgCardImage={ImgCardThree}
+                ImgCardTitle="Track Your Progress and Appreciate the Success"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <ImgCard
+                ImgCardImage={ImgCardFour}
+                ImgCardTitle="Enjoy Our 1:1 Live Sessions for Microlearning"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <ImgCard
+                ImgCardImage={ImgCardFive}
+                ImgCardTitle="Well Engage via a Classes Monitoring System"
+              />
+            </div>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <ImgCard
+                ImgCardImage={ImgCardSix}
+                ImgCardTitle="Feeling Safe With Every Payment You Will Making"
+              />
             </div>
           </div>
         </div>

@@ -84,3 +84,9 @@ body {
   height: 180px !important;
   max-width: max-content;
 }
+
+@media(max-width: 391px) {
+  .orange-card {
+    height: 350px;
+  }
+}
