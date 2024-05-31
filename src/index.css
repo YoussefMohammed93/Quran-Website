@@ -8,6 +8,16 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 12.5px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 164, 89);
+}
+
 .main-logo img {
   width: 200px;
   height: 50px;

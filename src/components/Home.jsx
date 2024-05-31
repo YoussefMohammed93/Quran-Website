@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ScrollToTopButton from "./ScrollBtn";
 import Header from "./Header";
 import OrangeCard from "./Orange-Card";
 import BlueCircle from "./BlueCircle";
@@ -25,11 +26,15 @@ import ImgCardThree from "/src/assets/img-card-3.svg";
 import ImgCardFour from "/src/assets/img-card-4.svg";
 import ImgCardFive from "/src/assets/img-card-5.svg";
 import ImgCardSix from "/src/assets/img-card-6.svg";
+import TeacherOne from "/src/assets/teacher1.svg";
+import TeacherTwo from "/src/assets/teacher2.svg";
+import QuestionImg from "/src/assets/question-img.svg";
 
 export default function Home() {
   return (
     <div>
       <Header />
+      <ScrollToTopButton />
       <section
         className="home bg-cover bg-right md:bg-center pt-2 md:pt-0 flex items-center md:block"
         id="home"
@@ -456,7 +461,7 @@ export default function Home() {
         </div>
       </section>
       <section className="border-b-2">
-        <div className="container mx-auto p-4 lg:px-16 xl:px-32 my-6">
+        <div className="container mx-auto p-4 lg:px-16 xl:px-32 my-6 mb-10">
           <h3 className="text-2xl text-center sm:text-3xl md:text-5xl text-[#766CAD] font-bold mb-10">
             Download & Read Quran House Company Profile
           </h3>
@@ -496,6 +501,142 @@ export default function Home() {
                 ImgCardImage={ImgCardSix}
                 ImgCardTitle="Feeling Safe With Every Payment You Will Making"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="border-b-2">
+        <div className="container mx-auto p-4 lg:px-16 xl:px-32 my-6">
+          <h2 className="text-center text-2xl sm:text-3xl md:text-5xl font-bold text-[#EF954B]">
+            Your Top Seed Website To Learn <br /> Quran, Arabic, And Islam
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-28 mt-12">
+            <div className="flex flex-col justify-center items-center">
+              <img
+                src={TeacherOne}
+                className="max-w-[310px]"
+                alt="Male Quran Tutor"
+              />
+              <h3 className="text-[#766CAD] text-xl sm:text-2xl md:text-4xl font-semibold text-center mt-5">
+                Best Online Male Quran Tutors
+              </h3>
+              <p className="text-lg sm:text-xl text-center mt-5">
+                All our tutors are authorized from an inveterate educational
+                establishment, which is Al-Azhar University with experiences
+                that lead them to the best practices in dealing with their
+                students. We carefully listen to students, easily adapt to their
+                personalities, and show the needed empathy and patience to
+                collaborate with them in every step.
+              </p>
+              <div className="mt-10">
+                <Link
+                  to="/"
+                  className="text-xl md:text-2xl text-white bg-[#766CAD] px-5 py-3 rounded-full hover:bg-[#5b5196] transition-all duration-150"
+                >
+                  Try Free Session
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <img
+                src={TeacherTwo}
+                className="max-w-[310px]"
+                alt="Female Quran Tutor"
+              />
+              <h3 className="text-[#766CAD] text-xl sm:text-2xl md:text-4xl font-semibold text-center mt-5">
+                Best Online Female Quran Tutors
+              </h3>
+              <p className="text-lg sm:text-xl text-center mt-5">
+                We have accredited female tutors with a certificate from the
+                prestigious Islamic University of Al-Azhar University. Our
+                female tutors are available for kids and sisters. They care
+                about their students, inspire them, & solve their learning
+                problems. They are warm-hearted mothers & older sisters for your
+                kids, showing them love and emotional intelligence.
+              </p>
+              <div className="mt-10">
+                <Link
+                  to="/"
+                  className="text-xl md:text-2xl text-white bg-[#766CAD] px-5 py-3 rounded-full hover:bg-[#5b5196] transition-all duration-150"
+                >
+                  Try Free Session
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="border-b-2">
+        <div className="container mx-auto p-4 lg:px-16 xl:px-32 my-6">
+          <h2
+            className="text-center text-2xl sm:text-3xl md:text-5xl font-bold text-[#EF954B]"
+            style={{ lineHeight: "1.3" }}
+          >
+            Discover Everything <br></br> About Quran In Our Blog
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 mb-5">
+            <div className="question-card shadow border">
+              <img src={QuestionImg} alt="Question-Image" className="pt-1" />
+              <h3 className="text-lg sm:text-xl text-[#DC811C] p-5">
+                Decoding Madd Lazim: Essential Guide to Tajweed’s Longest Madd
+              </h3>
+              <p className="text-xs px-5 text-gray-500">
+                What is Madd Arid Lissukun? Madd Arid Lissukun is a concept
+                derived from the Arabic language, integral to the proper
+                recitation of the Quran, known
+              </p>
+              <div className="py-1 border-b">
+                <Link to="/" className="text-[#DC811C] text-sm px-5">
+                  READ MORE »
+                </Link>
+              </div>
+              <div className="py-2">
+                <p className="text-sm text-gray-500 px-5">
+                  27 December، 2023 No Comments
+                </p>
+              </div>
+            </div>
+            <div className="question-card shadow border">
+              <img src={QuestionImg} alt="Question-Image" className="pt-1" />
+              <h3 className="text-lg sm:text-xl text-[#DC811C] p-5">
+                Decoding Madd Lazim: Essential Guide to Tajweed’s Longest Madd
+              </h3>
+              <p className="text-xs px-5 text-gray-500">
+                What is Madd Arid Lissukun? Madd Arid Lissukun is a concept
+                derived from the Arabic language, integral to the proper
+                recitation of the Quran, known
+              </p>
+              <div className="py-1 border-b">
+                <Link to="/" className="text-[#DC811C] text-sm px-5">
+                  READ MORE »
+                </Link>
+              </div>
+              <div className="py-2">
+                <p className="text-sm text-gray-500 px-5">
+                  27 December، 2023 No Comments
+                </p>
+              </div>
+            </div>
+            <div className="question-card shadow border">
+              <img src={QuestionImg} alt="Question-Image" className="pt-1" />
+              <h3 className="text-lg sm:text-xl text-[#DC811C] p-5">
+                Decoding Madd Lazim: Essential Guide to Tajweed’s Longest Madd
+              </h3>
+              <p className="text-xs px-5 text-gray-500">
+                What is Madd Arid Lissukun? Madd Arid Lissukun is a concept
+                derived from the Arabic language, integral to the proper
+                recitation of the Quran, known
+              </p>
+              <div className="py-1 border-b">
+                <Link to="/" className="text-[#DC811C] text-sm px-5">
+                  READ MORE »
+                </Link>
+              </div>
+              <div className="py-2">
+                <p className="text-sm text-gray-500 px-5">
+                  27 December، 2023 No Comments
+                </p>
+              </div>
             </div>
           </div>
         </div>

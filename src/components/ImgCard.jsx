@@ -7,7 +7,6 @@ const ImgCard = ({ ImgCardImage, ImgCardTitle, ImgCardLink }) => {
         <img
           src={ImgCardImage}
           alt="Image-Card"
-          loading="lazy"
         />
         <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center mt-4 text-white">
           {ImgCardTitle}
