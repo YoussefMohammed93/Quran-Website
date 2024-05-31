@@ -4,6 +4,8 @@ import Header from "./Header";
 import OrangeCard from "./Orange-Card";
 import BlueCircle from "./BlueCircle";
 import ImgCard from "./ImgCard";
+import Register from "./Register";
+import Footer from "./Footer";
 import HomeImg from "/src/assets/SectionHome.svg";
 import HomeBG from "/src/assets/home-bg.png";
 import HomeTeachers from "/src/assets/home-teachers.png";
@@ -641,6 +643,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Register />
+      <Footer />
     </div>
   );
 }
