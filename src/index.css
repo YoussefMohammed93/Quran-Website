@@ -14,9 +14,25 @@ body {
   max-width: max-content;
 }
 
+.orange-card {
+  height: 320px;
+}
+
+@media (max-width: 1286px) {
+  .orange-card {
+    height: 380px;
+  }
+  .arrow-img {
+    display: none;
+  }
+}
+
 @media (min-width: 1537px) {
   .home-content {
     padding-top: 3rem;
+  }
+  .arrow-img {
+    right: -50px;
   }
 }
 
@@ -37,6 +53,9 @@ body {
     font-size: 22px;
     text-shadow: 2px 2px 2px #6b6b6b;
   }
+  .orange-card {
+    height: 350px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -45,8 +64,23 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .orange-card {
+    height: 280px;
+  }
+}
+
 @media (max-width: 540px) {
   .home-video iframe {
     height: 400px;
   }
+  .orange-card {
+    height: 320px;
+  }
+}
+
+.border-img {
+  width: 180px !important;
+  height: 180px !important;
+  max-width: max-content;
 }
